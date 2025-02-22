@@ -1,0 +1,202 @@
+/*** hero section ***/
+.hero-section {
+  width: 100%;
+  position: relative;
+}
+
+.hero-section picture,
+.hero-section img {
+  width: 100%;
+}
+
+/* <!-- Booking Card Hero Section Big Screen--> */
+.booking-card {
+  width: 36rem;
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  height: auto;
+  transform: translateY(-50%);
+  background-color: var(--whiteColor);
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.booking-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+form h5 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+form .input-group {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.input-group input {
+  width: 50%;
+  border: 1px solid var(--lightGray);
+  padding: 1rem;
+}
+
+.input-group .first-input {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.input-group .second-input {
+  border-radius: 0rem 0.5rem 0.5rem 0;
+}
+
+.booking-card .btn {
+  background-color: var(--yellowColor);
+
+  width: 100%;
+  border: none;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+/* Booking Card for small Device */
+.booking-card-small {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.booking-card-small h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.booking-card-small .btn {
+  background-color: var(--yellowColor);
+  width: 100%;
+  border: none;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+}
+/* Booking eend here */
+
+/* service section */
+.service-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-section picture {
+  width: 100%;
+  display: block;
+}
+
+.service-section img {
+  width: 100%;
+  display: block;
+  /* height: auto; */
+}
+
+/* big save Section*/
+.big-save {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.big-save picture,
+.big-save img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio and allows height to adjust */
+  display: block;
+}
+
+/* impact section */
+.impact-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.impact-img picture,
+.impact-img img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio and allows height to adjust */
+  display: block;
+}
+
+/* featured Section */
+
+.featured-section {
+  padding: 6rem 0;
+}
+.featured-section h2 {
+  margin-bottom: 4rem;
+}
+
+.slider {
+  max-width: 1200px;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(30rem * 14);
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  width: 30rem;
+  height: 100px;
+  border: 1px solid var(--lightGray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 50%;
+  height: 50%;
+}
+
+/**********MediaQuery For small Mobile*************/
+/* Nokia N9 */
+@media screen and (max-width: 1023px) {
+  /* Booking Card Hero Section Big Screen */
+  .booking-card {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* service */
+  .service-img {
+    flex-direction: column;
+  }
+  .featured-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Large (L) - Desktops & Large Screens */
+/* Nest Hub */
+@media (min-width: 1280px) {
+  /* Booking Card for small Device */
+  .booking-card-small {
+    display: none;
+  }
+}
+
+/* //////  work on booking card and differnt section  */

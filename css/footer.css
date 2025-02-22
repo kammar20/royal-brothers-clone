@@ -1,0 +1,275 @@
+.footer {
+  width: 100%;
+}
+
+/* top footer */
+.top-footer {
+  width: 100%;
+  padding: 6rem 7rem 4rem;
+  background-color: #373737;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.contact,
+.social-links,
+.download-app {
+  width: 30%;
+}
+.company,
+.policy,
+.quick-links {
+  width: 20%;
+}
+
+.footer-top-common ul li {
+  margin-bottom: 1.4rem;
+}
+
+.footer-top-common ul li a {
+  font-size: 1.3rem;
+  color: var(--lightGray);
+}
+
+.top-footer .mail-icon {
+  width: 2.5rem;
+}
+.top-footer .footer-call-icon {
+  width: 2.2rem;
+}
+
+/* top foopter contact */
+.top-footer .contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* top footer social */
+.top-footer .social-links ul {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.top-footer .social-links ul li img {
+  width: 2.5rem;
+}
+
+/* top footer download app */
+.top-footer .download-app ul {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.top-footer .download-app ul li img {
+  width: 14rem;
+}
+
+/* sub footer */
+.sub-footer {
+  width: 100%;
+  background-color: #444444;
+  padding: 3rem 7rem;
+}
+
+.sub-footer article h3 {
+  font-size: 2.5rem;
+  color: var(--whiteColor);
+  margin-bottom: 1.5rem;
+}
+
+.sub-footer article p {
+  font-size: 1.5rem;
+  color: var(--lightGray);
+  margin-bottom: 1.5rem;
+}
+
+.sub-footer .presence h2 {
+  font-size: 2.6rem;
+  color: var(--whiteColor);
+  margin-bottom: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.sub-footer .presence h2::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Moves it below the text */
+  left: 50%;
+  height: 0.1563em;
+  background-color: #fed250;
+  width: 3.6rem;
+  margin-top: 0.5rem;
+  transform: translateX(-50%);
+}
+
+.sub-footer .presence .available-city {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.sub-footer .presence .available-city .city a {
+  font-size: 1.3rem;
+  color: var(--lightGray);
+}
+
+.dot {
+  content: '';
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 0.5em;
+  width: 0.5em;
+  transform: translateY(-4px);
+  margin: 0 0.6rem;
+}
+
+/* footer copy */
+.footer-copy {
+  width: 100%;
+  background-color: #373737;
+  padding: 1rem 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-copy p {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  color: var(--whiteColor);
+  text-align: center;
+}
+
+.footer-copy p img {
+  width: 2rem;
+  margin: 0 0.3rem;
+}
+
+/**********MediaQuery For small Mobile*************/
+/* Nokia N9 */
+@media screen and (max-width: 480px) {
+  /* footer top */
+  .top-footer {
+    padding: 4rem 1.5rem 3rem;
+    flex-flow: column nowrap;
+  }
+
+  .contact,
+  .social-links,
+  .download-app,
+  .company,
+  .policy,
+  .quick-links {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .download-app {
+    margin-bottom: 0;
+  }
+
+  .top-footer .download-app ul li img {
+    width: 12rem;
+  }
+
+  /* sub footer */
+  .sub-footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .sub-footer article h3 {
+    font-size: 2rem;
+  }
+
+  .sub-footer .presence .available-city {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .city {
+    width: 30%;
+    text-align: center;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  /* Footer Copy */
+  .footer-copy p {
+    font-size: 1rem;
+  }
+}
+
+/**********MediaQuery For Big Mobile*************/
+/* Surface Duo */
+@media (min-width: 481px) and (max-width: 819px) {
+  /* footer top */
+  .top-footer {
+    padding: 6rem 2rem 4rem;
+    justify-content: space-between;
+  }
+
+  .contact,
+  .social-links,
+  .download-app {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .download-app {
+    margin-bottom: 0;
+  }
+
+  .company,
+  .policy,
+  .quick-links {
+    width: 30%;
+    margin-bottom: 4rem;
+  }
+
+  /* .top-footer .download-app ul li img {
+    width: 15rem;
+  } */
+
+  /* sub footer */
+  .sub-footer {
+    padding: 3rem 2rem;
+  }
+
+  /* Footer Copy */
+  .footer-copy p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium (M) - Tablets & Small Laptops */
+/* I pad Air */
+@media (min-width: 820px) and (max-width: 1279px) {
+  /* footer top */
+  .contact,
+  .social-links,
+  .download-app {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .company,
+  .policy,
+  .quick-links {
+    width: 30%;
+    margin-bottom: 4rem;
+  }
+
+  .social-links,
+  .download-app {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+}

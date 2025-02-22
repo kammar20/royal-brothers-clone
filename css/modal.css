@@ -1,0 +1,272 @@
+/* General Reset */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2002;
+}
+
+/* Modal */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 2003;
+  background: #f5f5f5;
+
+  border-radius: 0.8rem;
+  width: 90%;
+  max-width: 85rem;
+  height: 90%;
+  overflow: hidden;
+}
+
+/* modal header */
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1.2rem 4rem;
+}
+
+.modal-header .branding {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.modal-header .branding img {
+  width: 12rem;
+}
+
+.line-seperator-modal {
+  width: 0.1rem;
+  height: 2rem;
+  background: var(--darkGray);
+}
+
+.branding-title {
+  font-size: 1.6rem;
+}
+
+.modal-btn-container {
+  position: absolute;
+  right: 2rem;
+}
+
+.modal-btn-container .modal-close-btn {
+  background-color: transparent;
+  border: none;
+  background: var(--lightGray);
+  width: 3rem;
+  height: 3rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+}
+
+.modal-btn-container .modal-close-btn img {
+  width: 1.2rem;
+}
+
+/* modal search container */
+.modal-search-container {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem 4rem;
+}
+
+.modal-search-icon {
+  width: 2rem;
+  color: gray;
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+
+/* input */
+.modal-search-bar {
+  width: 100%;
+  padding: 1.5rem 3rem 1.5rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+}
+
+.modal-clear-btn {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  border: none;
+  background: transparent;
+  color: var(--darkGray);
+  font-size: 1.6rem;
+}
+
+/* modal contant container */
+.modal-content-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  height: 75%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 4rem;
+}
+
+.modal-img-container {
+  width: 20%;
+  position: relative;
+}
+
+.modal-img-container img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.modal-img-container img:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.modal-img-container .modal-city-name {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--whiteColor);
+  font-size: 1.6rem;
+}
+
+/* Active States */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* mobile */
+/* nokia N9 */
+@media screen and (max-width: 480px) {
+  .modal-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* modal header */
+  .modal-header {
+    padding: 1rem;
+  }
+
+  .modal-header .branding img {
+    width: 8rem;
+  }
+  .branding-title {
+    font-size: 1.4rem;
+  }
+
+  .modal-btn-container {
+    right: 1rem;
+  }
+  .modal-btn-container .modal-close-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* modal search contaienr */
+  .modal-search-container {
+    padding: 1rem;
+  }
+
+  .modal-search-icon {
+    width: 1.5rem;
+    left: 2rem;
+  }
+
+  .modal-search-bar {
+    padding: 1.5rem 3.5rem;
+  }
+
+  .modal-clear-btn {
+    right: 2rem;
+    font-size: 1.4rem;
+  }
+
+  /* modal contant container */
+  /* .modal-content-container {
+    justify-content: center;
+  } */
+
+  /* image container */
+  .modal-img-container {
+    width: 40%;
+  }
+
+  .modal-img-container .modal-city-name {
+    font-size: 1.2rem;
+  }
+}
+
+/**********MediaQuery For Big Mobile*************/
+/* Surface Duo */
+@media (min-width: 481px) and (max-width: 819px) {
+  .modal-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* modal contant container */
+  /* .modal-content-container {
+    justify-content: center;
+  } */
+
+  .modal-img-container {
+    width: 25%;
+  }
+
+  .modal-img-container .modal-city-name {
+    font-size: 1.4rem;
+  }
+}
+
+/* Medium (M) - Tablets & Small Laptops */
+/* I pad Air */
+@media (min-width: 820px) and (max-width: 1279px) {
+}
+
+/* Large (L) - Desktops & Large Screens */
+/* Nest Hub */
+@media (min-width: 1280px) {
+}

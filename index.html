@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Brothers | Clone</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/apple-touch-icon.png" type="image/x-icon" />
+
+    <!-- Googel Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/8c44950f49.js" crossorigin="anonymous"></script>
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/testimonial.css" />
+</head>
+
+<body>
+    <!-- Container -->
+    <main class="container">
+        <!-- header -->
+        <header class="header">
+            <!-- topbar -->
+            <div class="topbar">
+                <p class="phone-number">
+                    <img src="./images/topnav-call-svg.svg" alt="" />
+                    <a href="#">+917795687594</a>
+                    <span> / </span>
+                    <a href="#">+919019595595</a>
+                </p>
+                <p class="line-seperator"></p>
+                <p class="chat-text">Chat now</p>
+            </div>
+
+            <!-- hr -->
+            <div class="hr"></div>
+
+            <!-- navbar -->
+            <nav class="navbar">
+                <!-- hamburger -->
+                <div class="hamburger-menu" id="openSidebar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- logo -->
+                <div class="logo">
+                    <img class="pc-logo" src="./images/logo-pc.svg" alt="" />
+                    <img class="mobile-logo" src="./images/logo-mobile.svg" alt="" />
+                </div>
+
+                <!-- nav menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-img">
+                            <img src="./images//logo-sub.svg" alt="" class="logo-sub" />
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Traiff</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-btn">
+                            What's new? <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Short by RB</a>
+                            <a href="#">Advanture by RB</a>
+                            <a href="#">Inter-city Travel</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Offers</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-btn nav-link">Partner with us <i
+                                class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Earn with us</a>
+                            <a href="#">Own a Franchise</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- location and login -->
+                <div class="nav-buttons">
+                    <button class="btn-location">
+                        <img src="./images/location-drop-svg.svg" alt="" />
+                        Bangalore<i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <p class="line-seperator-btn"></p>
+                    <div class="login-buttons">
+                        <button class="btn-login">Login</button>
+                        <button class="btn-signup">Sign up</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Sidebar -->
+        <div class="overlay" id="overlay"></div>
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <div class="cross-btn">
+                    <button class="close-btn" id="closeSidebar">
+                        <img src="./images/icons_and_logos/cross-icon.svg" alt="" />
+                    </button>
+                </div>
+
+                <!-- side bar login button group for small screen -->
+                <li class="sidebar-btn-group">
+                    <button class="sidebar-login">Log In</button>
+                    <p class="line-seperator-sidebar"></p>
+                    <button class="sidebar-signup">Sign Up</button>
+                </li>
+                <li><a href="#">Tariff</a></li>
+                <li><a href="#">Store by RB</a></li>
+                <li><a href="#">Adventure by RB</a></li>
+                <li><a href="#">RoyalBrothersX</a></li>
+                <li><a href="#">Partner with us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Inter-city Travel</a></li>
+                <li><a href="#">About Us</a></li>
+
+                <!-- Accordion for small screen -->
+                <div class="small-screen-li">
+                    <!-- Accordion Menu-->
+                    <div class="accordion">
+                        <li class="accordion-header">
+                            Menu
+                            <img src="./images/icons_and_logos/down-icon.svg" alt="" />
+                        </li>
+                        <ul class="accordion-body" id="menuAccordion">
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Partner with us Accordion Menu -->
+                    <div class="accordion">
+                        <li class="accordion-header">
+                            Partner with Us
+                            <img src="./images/icons_and_logos/down-icon.svg" alt="" />
+                        </li>
+                        <ul class="accordion-body" id="menuAccordion">
+                            <li><a href="#">Own a Franchise</a></li>
+                            <li><a href="#">Earn with Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- big screen li -->
+                <div class="big-screen-li">
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </div>
+
+                <li><a href="#">React Us</a></li>
+            </ul>
+        </aside>
+
+        <!-- Modal -->
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <!-- modal header -->
+            <div class="modal-header">
+                <div class="branding">
+                    <img src="./images/icons_and_logos/modal-brand-logo.png" alt="" />
+                    <p class="line-seperator-modal"></p>
+                    <p class="branding-title">Bike Rentals</p>
+                </div>
+                <div class="modal-btn-container">
+                    <button class="modal-close-btn">
+                        <img src="./images/icons_and_logos/cross-icon.svg" alt="" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- modal search -->
+            <div class="modal-search-container">
+                <img src="./images/icons_and_logos/search-icon.svg" alt="" class="modal-search-icon" />
+                <input type="text" class="modal-search-bar" placeholder="Search or type city to select" />
+                <button class="modal-clear-btn">Clear</button>
+            </div>
+
+            <!-- modal content -->
+            <div class="modal-content-container">
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Agra.png" alt="" />
+                    <span class="modal-city-name">Agra</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Ahmedabad.png" alt="" />
+                    <span class="modal-city-name">Ahmedabad</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Bangalore.png" alt="" />
+                    <span class="modal-city-name">Bangalore</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Bangalore_Airport.png" alt="" />
+                    <span class="modal-city-name">Bangalore Airport</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Belagavi.png" alt="" />
+                    <span class="modal-city-name">Belagavi</span>
+                </div>
+
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Bhubaneswar.png" alt="" />
+                    <span class="modal-city-name">Bhubaneswar</span>
+                </div>
+
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Calicut.png" alt="" />
+                    <span class="modal-city-name">Calicut</span>
+                </div>
+
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Chandigarh.png" alt="" />
+                    <span class="modal-city-name">Chandigarh</span>
+                </div>
+
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Chikmangluru.png" alt="" />
+                    <span class="modal-city-name">Chikmangluru</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Cochin.png" alt="" />
+                    <span class="modal-city-name">Cochin</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Coorg_Madikeri.png" alt="" />
+                    <span class="modal-city-name">Coorg</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Delhi.png" alt="" />
+                    <span class="modal-city-name">Delhi</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Gandhi_Nagar.png" alt="" />
+                    <span class="modal-city-name">Gandhinagar</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Guntur.png" alt="" />
+                    <span class="modal-city-name">Guntur</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Gurugram.jpg" alt="" />
+                    <span class="modal-city-name">Gurugram</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Guwahati.png" alt="" />
+                    <span class="modal-city-name">Guwahati</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Hampi.png" alt="" />
+                    <span class="modal-city-name">Hampi</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Hubli.png" alt="" />
+                    <span class="modal-city-name">Hubli-Dharwad</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Hyderabad.png" alt="" />
+                    <span class="modal-city-name">Hyderabad</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Jaipur.png" alt="" />
+                    <span class="modal-city-name">Jaipur</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Jaisalmer.png" alt="" />
+                    <span class="modal-city-name">Jaisalmer</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Jodhpur.png" alt="" />
+                    <span class="modal-city-name">Jodhpur</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Kolkata.png" alt="" />
+                    <span class="modal-city-name">Kolkata</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Leh_Ladakh.png" alt="" />
+                    <span class="modal-city-name">Leh Ladakh</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Manali.png" alt="" />
+                    <span class="modal-city-name">Manali</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Mangalore.png" alt="" />
+                    <span class="modal-city-name">Mangalore</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Mysore.png" alt="" />
+                    <span class="modal-city-name">Mysore</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Pondicherry.png" alt="" />
+                    <span class="modal-city-name">Pondicherry</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Puri.png" alt="" />
+                    <span class="modal-city-name">Puri</span>
+                </div>
+
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Ranchi.png" alt="" />
+                    <span class="modal-city-name">Ranchi</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Surat.png" alt="" />
+                    <span class="modal-city-name">Surat</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Tirupati.png" alt="" />
+                    <span class="modal-city-name">Tirupati</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Trivandrum.png" alt="" />
+                    <span class="modal-city-name">Trivandrum</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Udaipur.png" alt="" />
+                    <span class="modal-city-name">Udaipur</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Udupi.png" alt="" />
+                    <span class="modal-city-name">Udupi-Manipal</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Vijayawada.png" alt="" />
+                    <span class="modal-city-name">Vijayawada</span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Vizag.png" alt="" />
+                    <span class="modal-city-name">Vizag</span>
+                </div>
+
+                <div class="modal-img-container">
+                    <img src="./images/city_images/Wayanad.png" alt="" />
+                    <span class="modal-city-name">Wayanad</span>
+                </div>
+
+                <div class="modal-img-container">
+                    <img src="" alt="" />
+                    <span class="modal-city-name"></span>
+                </div>
+                <div class="modal-img-container">
+                    <img src="" alt="" />
+                    <span class="modal-city-name"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <picture>
+                <source srcset="./images/hero_desktop.webp" media="(min-width: 1024px)" />
+                <source srcset="./images/hero_tablet.webp" media="(min-width: 768px)" />
+                <img src="./images/hero_mobile.webp" alt="Hero Image" />
+            </picture>
+
+            <!-- Booking Card Hero Section -->
+            <div class="booking-card">
+                <h3>Search your next ride</h3>
+                <form>
+                    <h5>Pickup</h5>
+                    <div class="input-group">
+                        <input class="first-input" type="date" placeholder="Date" />
+                        <input class="second-input" type="time" />
+                    </div>
+                    <h5>Dropoff</h5>
+                    <div class="input-group">
+                        <input class="first-input" type="date" />
+                        <input class="second-input" type="time" />
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn">Search</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Booking Card for small device -->
+        <section class="booking-card-small common-section">
+            <h3>Search your next ride</h3>
+            <form>
+                <h5>Pickup</h5>
+                <div class="input-group">
+                    <input class="first-input" type="date" placeholder="Date" />
+                    <input class="second-input" type="time" />
+                </div>
+                <h5>Dropoff</h5>
+                <div class="input-group">
+                    <input class="first-input" type="date" />
+                    <input class="second-input" type="time" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn">Search</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Service Section -->
+        <section class="service-section common-section">
+            <h2>Services we Offer</h2>
+            <!-- Service Section -->
+
+            <div class="service-img">
+                <picture>
+                    <source srcset="./images/our_services_right.webp" media="(min-width: 1025px)" />
+                    <source srcset="./images/our_services_top_tablet.webp" media="(min-width: 768px)" />
+                    <img src="./images/our_services_top_mobile.webp" alt="Service Image 1" />
+                </picture>
+
+                <picture>
+                    <source srcset="./images/our_services_left.webp" media="(min-width: 1025px)" />
+                    <source srcset="./images/our_services_bottom_tablet.webp" media="(min-width: 768px)" />
+                    <img src="./images/our_services_bottom_mobile.webp" alt="Service Image 2" />
+                </picture>
+            </div>
+        </section>
+
+        <!-- Big Save Section -->
+        <section class="big-save common-section">
+            <picture>
+                <source srcset="./images/BigSaveDesktop.webp" media="(min-width: 1024px)" />
+                <source srcset="./images/BigSaveTablet.webp" media="(min-width: 768px)" />
+                <img src="./images/BigSaveMobile.webp" alt="Hero Image" />
+            </picture>
+        </section>
+
+        <!-- impact section -->
+        <section class="impact-section common-section">
+            <h2>Our impact in <span class="yellow-text"> numbers </span></h2>
+            <div class="impact-img">
+                <picture>
+                    <source srcset="./images/Stats_Desktop.webp" media="(min-width: 1024px)" />
+                    <source srcset="./images/Stats_tablet.webp" media="(min-width: 768px)" />
+                    <img src="./images/Stats_Mobile.webp" alt="Hero Image" />
+                </picture>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section common-section">
+            <h2>
+                What our users have to
+                <span class="yellow-text">say</span>
+            </h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <!-- Testimonial 8 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Kevin was very helpful and supportive and assisted with
+                                        every process of booking the vehicle. It was a great
+                                        experience with Royal brothers. I would definitely
+                                        recommend for their rental bikes.
+                                    </p>
+                                    <h6 class="testimonial-author">Dipti Rekha</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 9 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Thank you for delivering wonderful service, it's a great
+                                        help for students like me who want to travel in cities on
+                                        bike. Every problem is resolved by contacting customer
+                                        care. Thank you for your valuable customer service. Hope
+                                        all enjoy the service with minimal fee.
+                                    </p>
+                                    <h6 class="testimonial-author">Sai Manikanta Gududru</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 10 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        They have the best prices and good condition of vehicles,
+                                        also they have all the support that you could require on
+                                        the road in case of any mishaps. Thanks a lot to the team.
+                                    </p>
+                                    <h6 class="testimonial-author">Aditya Chavan</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 1 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Very reliable motorbikes and awesome roadside services are
+                                        guaranteed. Custer service is spot on. Denzil has helped
+                                        me very patiently to go over the terms and conditions.
+                                        Definitely rent from them.
+                                    </p>
+                                    <h6 class="testimonial-author">Kausal Benarjee</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Came across Royal Brothers while searching for bike
+                                        rentals in Hyderabad. App is clean and through the point
+                                        and was very easy to setup and create an account and
+                                        choose bikes and book. Special mention for contact is
+                                        section which lead to reaching out to customer support and
+                                        was very promptly helped by - Stijin, who helped with all
+                                        queries and processed the booking in a breeze. Definitely
+                                        a good overall experience.
+                                    </p>
+                                    <h6 class="testimonial-author">Saurabh</h6>
+                                    <p class="testimonial-source">Apple App Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Paulleo did an excellent job fixing the issue, addressing
+                                        both the self-start problem by changing the battery and
+                                        resolving some tuning issues. Now, the self-start is
+                                        working fine, and the bike starts with a single kick, all
+                                        within a remarkable five minutes. His great service left
+                                        me genuinely impressed
+                                    </p>
+                                    <h6 class="testimonial-author">Donapti Manohar Reddy</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        This app was very useful for 2 -3 days who know how to
+                                        ride and has a valid license. Very budget friendly and
+                                        good customer support.
+                                    </p>
+                                    <h6 class="testimonial-author">Syed Imran</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Vehicle was in very good condition and all the staff was
+                                        very humble. Our vehicle got punctured but we got full
+                                        assistance and after contacting their staff. We also get
+                                        the full refund. Absolutely reliable in Bangalore.
+                                    </p>
+                                    <h6 class="testimonial-author">Akshay Kumar</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 6 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        I have just made a booking, because of connecting flights
+                                        being late, I needed to shift the whole booking by a day.
+                                        First of all the app and website are good, I found the app
+                                        especially user friendly and the inventory is good too. On
+                                        top when I needed the modification of the booking I was
+                                        helped exceptionally well by Denzil in customer care. He
+                                        understood the delay, helped cancel the last booking with
+                                        no penalties.This took away the stress associated with
+                                        such situations.
+                                    </p>
+                                    <h6 class="testimonial-author">Gaurav Kumar</h6>
+                                    <p class="testimonial-source">Apple app store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 7 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Hello all, I had booked a bike for 14th Oct. Just then I
+                                        noticed I booked for the wrong date and my ride will start
+                                        in an 1 hrs time. It was indeed one of those day you know
+                                        you have messed up. I reached out to royal brothers to see
+                                        if there is anyhow I can get this fixed. Thanks to my
+                                        saviour Denzil from RB, in a flash he had my concern fixed
+                                        and ready to move on. I was assisted in cancelling a ride
+                                        one hr prior to scehduled time. Thank you Denzil & RB -
+                                        you guys are doing great stuff!
+                                    </p>
+                                    <h6 class="testimonial-author">Yathi Premlal</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 8 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Kevin was very helpful and supportive and assisted with
+                                        every process of booking the vehicle. It was a great
+                                        experience with Royal brothers. I would definitely
+                                        recommend for their rental bikes.
+                                    </p>
+                                    <h6 class="testimonial-author">Dipti Rekha</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 9 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Thank you for delivering wonderful service, it's a great
+                                        help for students like me who want to travel in cities on
+                                        bike. Every problem is resolved by contacting customer
+                                        care. Thank you for your valuable customer service. Hope
+                                        all enjoy the service with minimal fee.
+                                    </p>
+                                    <h6 class="testimonial-author">Sai Manikanta Gududru</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 10 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        They have the best prices and good condition of vehicles,
+                                        also they have all the support that you could require on
+                                        the road in case of any mishaps. Thanks a lot to the team.
+                                    </p>
+                                    <h6 class="testimonial-author">Aditya Chavan</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 1 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Very reliable motorbikes and awesome roadside services are
+                                        guaranteed. Custer service is spot on. Denzil has helped
+                                        me very patiently to go over the terms and conditions.
+                                        Definitely rent from them.
+                                    </p>
+                                    <h6 class="testimonial-author">Kausal Benarjee</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Came across Royal Brothers while searching for bike
+                                        rentals in Hyderabad. App is clean and through the point
+                                        and was very easy to setup and create an account and
+                                        choose bikes and book. Special mention for contact is
+                                        section which lead to reaching out to customer support and
+                                        was very promptly helped by - Stijin, who helped with all
+                                        queries and processed the booking in a breeze. Definitely
+                                        a good overall experience.
+                                    </p>
+                                    <h6 class="testimonial-author">Saurabh</h6>
+                                    <p class="testimonial-source">Apple App Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="quote-mark">
+                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                </div>
+                                <div class="card">
+                                    <p class="testimonial-text">
+                                        Paulleo did an excellent job fixing the issue, addressing
+                                        both the self-start problem by changing the battery and
+                                        resolving some tuning issues. Now, the self-start is
+                                        working fine, and the bike starts with a single kick, all
+                                        within a remarkable five minutes. His great service left
+                                        me genuinely impressed
+                                    </p>
+                                    <h6 class="testimonial-author">Donapti Manohar Reddy</h6>
+                                    <p class="testimonial-source">Google Play Store</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="corosul-btn-container">
+                    <button class="prev">
+                        <img src="./images/icons_and_logos/left-icon.svg" alt="">
+                    </button>
+                    <button class="next">
+                        <img src="./images/icons_and_logos/right-icon.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+            <h2>Featured In</h2>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./images/fetured1.webp" height="100" width="250" alt="1" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured2.webp" height="100" width="250" alt="2" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured3.webp" height="100" width="250" alt="3" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured4.webp" height="100" width="250" alt="4" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured5.webp" height=" 100" width="250" alt="5" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured6.webp" height="100" width="250" alt="6" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured7.webp" height="100" width="250" alt="7" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured1.webp" height="100" width="250" alt="1" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured2.webp" height="100" width="250" alt="2" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured3.webp" height="100" width="250" alt="3" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured4.webp" height="100" width="250" alt="4" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured5.webp" height=" 100" width="250" alt="5" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured6.webp" height="100" width="250" alt="6" />
+                    </div>
+                    <div class="slide">
+                        <img src="./images/fetured7.webp" height="100" width="250" alt="7" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Chat -->
+        <div class="support-container">
+            <img src="./images/icons_and_logos/chat-icon.svg" alt="" />
+            <div class="assistance-box">
+                <img src="./images/images/support-person-img.webp" alt="" />
+                <p>
+                    Need Assistance? <br />
+                    Chat with Us!
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- Top Footer -->
+
+            <div class="top-footer">
+                <!-- ul Contact-->
+                <div class="contact footer-top-common">
+                    <h4 class="footer-common-h3">Royal Brothers</h4>
+                    <ul>
+                        <li>
+                            <img class="mail-icon" src="./images/icons_and_logos/mail-icon.svg" alt="" />
+                            <a href="#">support@royalbrothers.com</a>
+                        </li>
+                        <li>
+                            <img class="footer-call-icon" src="./images//icons_and_logos/phone-icon.svg" alt="" />
+                            <a href="#">+917795687594 / +919019595595</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ul company -->
+                <div class="company footer-top-common">
+                    <h4 class="footer-common-h3">Company</h4>
+                    <ul>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers <span class="tag">We're hiring!</span></a>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- ul policy -->
+                <div class="policy footer-top-common">
+                    <h4 class="footer-common-h3">Policies</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ul quick links -->
+                <div class="quick-links footer-top-common">
+                    <h4 class="footer-common-h3">Quick Links</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Tariff</a>
+                        </li>
+                        <li>
+                            <a href="#">Offers</a>
+                        </li>
+                        <li>
+                            <a href="#">Riding Gears</a>
+                        </li>
+                        <li>
+                            <a href="#">Own a franchise</a>
+                        </li>
+                        <li>
+                            <a href="#">Earn with us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- follow us  -->
+                <div class="social-links footer-top-common">
+                    <h4 class="footer-common-h3">Follow Us</h4>
+                    <ul>
+                        <li>
+                            <img src="./images/icons_and_logos/insta-icon.svg" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/icons_and_logos/facebook-icon.svg" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/icons_and_logos/twitter-icon.svg" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/icons_and_logos/linkedin-icon.svg" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/icons_and_logos/youtube-icon.svg" alt="" />
+                        </li>
+
+                        <!-- <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+
+                        <li><i class="fa-brands fa-youtube"></i></li> -->
+                    </ul>
+                </div>
+
+                <!-- download app -->
+                <div class="download-app footer-top-common">
+                    <h4 class="footer-common-h3">Download our app</h4>
+                    <ul>
+                        <li>
+                            <img src="./images/icons_and_logos/apple-store-icon.webp" alt="" />
+                        </li>
+                        <li>
+                            <img src="./images/icons_and_logos/play-store-icon.webp" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sub Footer -->
+            <div class="sub-footer">
+                <article>
+                    <h3>Banglore Bike Rent</h3>
+                    <p>
+                        Though there are other metropolitan cities in India, have you ever
+                        wondered why Bangalore is the most desired place for many people?
+                        Beyond its IT hubs, biotech companies, pubs, and nightlife, the
+                        city is loved for its pleasant weather and greenery. Unlike other
+                        cities that become extremely hot in summer, Bangalore's humidity
+                        is relatively low.
+                    </p>
+                    <p>
+                        Known as the 'Garden City of India,' it has numerous public parks
+                        along with an abundance of trees. Since the best time to visit the
+                        city is throughout the year, it’s your sign to plan a visit now.
+                        We recommend taking a bike for rent in Banglore to explore the
+                        city to the fullest.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Bike on rent in Banglore</h3>
+                    <p>
+                        Bangalore is home to many famous tourist spots, such as Bangalore
+                        Palace, Lal Bagh Botanical Garden, Cubbon Park, Ulsoor Lake, and
+                        Nandi Hills. However, it is also infamous for its bumper-to-bumper
+                        traffic.
+                    </p>
+                    <p>
+                        If you choose cabs or public transport, you will likely regret
+                        your decision. They are time-consuming, and you will find yourself
+                        running late. If you need to shop in popular areas such as
+                        Commercial Street, KR Market, MG Road, Shivaji Nagar, or Church
+                        Street, finding parking for a car can be a real challenge. And
+                        that’s why you should be renting a bike instead. It offers
+                        flexibility, freedom, and ease of movement.
+                    </p>
+                    <p>
+                        When you hire bike in Bangalore you can zip through the city’s
+                        traffic, find a parking spot to station your vehicle easily, and
+                        make the most of your time without wasting it stuck in traffic.
+                        Our bikes come with safety gear and are easy to handle. So you
+                        need not worry about anything at all!
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Why are bike rentals in Banglore the best option?</h3>
+                    <p>
+                        Cabs can be quite expensive. For a one-way trip, you could end up
+                        paying far more than you expect. During peak hours, the fares
+                        double, leaving you with no option but to pay the higher fare just
+                        to reach your destination. Worse still, there’s no guarantee that
+                        you will get your ride on time, as drivers often reject booking
+                        requests, leaving you waiting for a long time.
+                    </p>
+                    <p>
+                        Though Bangalore’s public buses and metro services are widespread,
+                        they are too crowded and may not always operate on time. This may
+                        make your journey stressful and inconvenient.Hire bike in
+                        Bangalore and cover longer distances and save your hard-earned
+                        money as well. It might be hard to believe, but the bike rental
+                        fares start as low as Rs. 17 per hour.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Bike rentals in Bangalore- the best for residents!</h3>
+                    <p>
+                        When bikes are the only way to escape the chaos of the city,
+                        owning one can be a bit of a challenge. From maintenance and
+                        insurance to depreciation, managing a bike can get expensive. By
+                        opting for Banglore rent bike services, you can skip all your
+                        worries. We take care of the maintenance and insurance so that a
+                        bike of your choice is ready as and when you need it.
+                    </p>
+                    <p>
+                        Whether you're heading out on a date, attending an interview, or
+                        for weekend getaways, we have the perfect bike that suits every
+                        occasion. Why settle for boring when you can ride smart? Moreover,
+                        to truly live in the moment in Bangalore, you have to move at the
+                        city’s pace. It won’t wait for you to catch up. When you rent a
+                        bike, you can live up to all your plans, without any cancelling,
+                        delays, or disappointments.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Scooter rentals in Bangalore</h3>
+                    <p>
+                        Taking a scooty in rent in Bangalore is the most efficient way to
+                        commute across the city for low-key occasions. Whether it’s for
+                        grocery shopping, visiting friends, grabbing a quick bite, going
+                        to a movie theatre, or house hunting, renting scooty in Bangalore
+                        can be convenient and affordable.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Royal Brothers, your trusted bike rentals in Bengaluru!</h3>
+                    <p>
+                        Are you looking to rent bike in Bangalore? Look no further than
+                        Royal Brothers! With 22+ pickup points across Bangalore, renting a
+                        bike has never been easier! Whether you're near Koramangala,
+                        Indiranagar, or Whitefield, you can find a Royal Brothers rental
+                        station just around the corner, making it super convenient to pick
+                        up and drop off your ride.
+                    </p>
+                    <p>
+                        From scooters to gear bikes and electric options, we have got
+                        everything for you. With a large fleet and 100+ bike models, we
+                        cater to all your needs. As India’s leading bike rental service
+                        provider, we offer flexible and safe bike rentals on an hourly,
+                        daily, weekly, monthly, or even yearly basis, all at affordable
+                        prices with utmost convenience.
+                    </p>
+                    <p>
+                        For a fun weekend trip or daily rides, you can easily choose our
+                        service and explore the city on your own terms.
+                    </p>
+                    <p>
+                        We are present in multiple locations across the city so that our
+                        users do not have to travel farther to hire a bike in Bangalore.
+                        Our pick-up points are at:
+                        <span class="white-text">Indiranagar, Koramangala, Marathahalli, Electronic City,
+                            Whitefield, Yelahanka, Majestic, Bellandur</span>
+                        , and many more.
+                    </p>
+                </article>
+
+                <div class="presence">
+                    <h2>Our Presence</h2>
+                    <div class="available-city">
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Agra</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Ahmedabad</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Bangalore</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Rent electric vehicle in
+                                <span class="white-text">Bangalore</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Bangalore Airport</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Belagavi</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Bhubaneswar</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Calicut</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Chandigarh</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Chikmagalur</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Cochin</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Coorg</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Delhi</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Gandhinagar</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Guntur</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Gurugram</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Guwahati</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Hampi</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Hubli-Dharwad</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Hyderabad</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Jaipur</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Jaisalmer</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Jodhpur</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Kolkata</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Leh Ladakh</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Manali</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Mangalore</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Mysore</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in<span class="white-text">Pondicherry</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Puri</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Ranchi</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Surat</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Tirupati</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Trivandrum</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Udaipur</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Udupi - manipal</span></a>
+                            <span class="dot"></span>
+                        </p>
+
+                        <p class="city">
+                            <a href="#">Bikes for rent in
+                                <span class="white-text">Vijayawada</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Vizag</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#">Bikes for rent in <span class="white-text">Wayanad</span></a>
+                            <span class="dot"></span>
+                        </p>
+                        <p class="city">
+                            <a href="#"><span class="white-text"></span></a>
+                            <span class=""></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Copy -->
+            <div class="footer-copy">
+                <p>
+                    Made with <img src="./images//heart.webp" alt="" /> by Ammar Azam
+                    Khan
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./js/feature.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/testimonial.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>

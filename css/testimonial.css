@@ -1,0 +1,278 @@
+.testimonial-section {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.carousel-container {
+  max-width: 1500px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+  width: 100%;
+  height: 50rem;
+}
+
+.carousel-inner {
+  display: flex;
+
+  gap: 2rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 55rem;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--whiteColor);
+  padding: 3.2rem;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-wrapper {
+  position: relative;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Middle item effect */
+.middle .card-wrapper {
+  transform: translateY(-120px);
+}
+
+.corosul-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 5rem;
+}
+
+.corosul-btn-container button {
+  background-color: transparent;
+  border: none;
+}
+
+.corosul-btn-container button img {
+  width: 2rem;
+}
+
+.quote-mark {
+  position: absolute;
+  top: -5rem;
+  left: -1.5rem;
+  font-size: 80px;
+  line-height: 1;
+  color: #ffb800;
+  font-family: Georgia, serif;
+  z-index: 3;
+}
+
+.quote-mark img {
+  width: 4rem;
+}
+
+.testimonial-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  font-size: 18px;
+}
+
+.testimonial-source {
+  color: #666;
+  margin: 4px 0 0 0;
+  font-size: 14px;
+}
+
+/* media */
+/* Responsive adjustments */
+
+@media (max-width: 480px) {
+  .carousel-container {
+    max-width: 320px;
+  }
+  .carousel-inner {
+    align-items: flex-start;
+  }
+
+  .carousel-item {
+    flex: 0 0 30.1rem;
+    height: 470px;
+  }
+  /* Middle item effect */
+  .middle .card-wrapper {
+    transform: translateY(-1px);
+  }
+
+  .testimonial-text {
+    color: #333;
+    font-size: 12px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+  }
+
+  .testimonial-source {
+    font-size: 12px;
+  }
+
+  .quote-mark {
+    top: -5.5rem;
+    left: -0.6rem;
+  }
+
+  .quote-mark img {
+    width: 3rem;
+  }
+}
+
+/* big screen mobile */
+@media (min-width: 481px) and (max-width: 819px) {
+  .carousel-container {
+    max-width: 320px;
+  }
+  .carousel-inner {
+    align-items: flex-start;
+  }
+
+  .carousel-item {
+    flex: 0 0 30.1rem;
+    height: 470px;
+  }
+  /* Middle item effect */
+  .middle .card-wrapper {
+    transform: translateY(-1px);
+  }
+
+  .testimonial-text {
+    color: #333;
+    font-size: 12px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+  }
+
+  .testimonial-source {
+    font-size: 12px;
+  }
+
+  .quote-mark {
+    top: -5.5rem;
+    left: -0.6rem;
+  }
+
+  .quote-mark img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1279px) {
+  .carousel-container {
+    max-width: 650px;
+  }
+  .carousel-inner {
+    align-items: flex-start;
+  }
+
+  .carousel-item {
+    flex: 0 0 30.1rem;
+    height: 470px;
+  }
+  /* Middle item effect */
+  .middle .card-wrapper {
+    transform: translateY(-1px);
+  }
+
+  .testimonial-text {
+    color: #333;
+    font-size: 12px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+  }
+
+  .testimonial-source {
+    font-size: 12px;
+  }
+
+  .quote-mark {
+    top: -5.5rem;
+    left: -0.6rem;
+  }
+
+  .quote-mark img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1499px) {
+  .carousel-container {
+    max-width: 1200px;
+  }
+  .carousel-inner {
+    align-items: flex-start;
+  }
+
+  .carousel-item {
+    flex: 0 0 38.8rem;
+    height: 470px;
+  }
+  /* Middle item effect */
+  .middle .card-wrapper {
+    transform: translateY(-1px);
+  }
+
+  .testimonial-text {
+    color: #333;
+    font-size: 14px;
+  }
+
+  .testimonial-author {
+    font-size: 16px;
+  }
+
+  .testimonial-source {
+    font-size: 12px;
+  }
+
+  .quote-mark {
+    top: -5.5rem;
+    left: -0.6rem;
+  }
+
+  .quote-mark img {
+    width: 3rem;
+  }
+}

@@ -1,0 +1,226 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  padding: 4rem 0 0;
+  z-index: 1001;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+}
+
+/* li cross btn */
+.cross-btn {
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Close Button */
+.close-btn {
+  border: none;
+  background: none;
+}
+
+.close-btn img {
+  width: 1.5rem;
+}
+
+/* side bar login btn  For small Screen*/
+.sidebar-btn-group {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.sidebar-btn-group::after {
+  content: '';
+  display: block;
+  height: 0.1rem;
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  left: 3rem;
+  background-color: var(--lightGray);
+}
+
+.line-seperator-sidebar {
+  height: 1.5rem;
+  width: 0.19rem;
+  background-color: var(--blackColor);
+  margin: 0 4rem;
+}
+
+/* sidebar login btn */
+.sidebar-login,
+.sidebar-signup {
+  background-color: transparent;
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sidebar-login:active,
+.sidebar-signup:active {
+  background-color: var(--lightGray);
+}
+
+/* List  */
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul li a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1.5rem 3rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.sidebar ul li a::after {
+  content: '';
+  display: block;
+  height: 0.1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  background-color: var(--lightGray);
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--lightGray);
+}
+
+/* Big Screen Li */
+.big-screen-li {
+  display: none;
+}
+
+/* small screen li (accordion) */
+.small-screen-li {
+  display: none;
+}
+
+/* Sidebar Accordion */
+/* Accordion Styles */
+.accordion {
+  overflow: hidden;
+}
+
+.accordion-header {
+  font-size: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header img {
+  width: 1.2rem;
+}
+
+.accordion-header::after {
+  content: '';
+  display: block;
+  height: 0.1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  background-color: var(--lightGray);
+}
+
+.accordion-header:hover {
+  background-color: var(--lightGray);
+}
+
+.accordion-body {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-header.active + .accordion-body {
+  height: auto;
+  padding-left: 2rem;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Active Sidebar & Overlay */
+.sidebar.active {
+  transform: translateX(0); /* Slide in */
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Prevent Scrolling When Sidebar is Open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/**********MediaQuery For small Mobile*************/
+/* Nokia N9 */
+@media screen and (max-width: 480px) {
+  .sidebar-btn-group {
+    display: flex;
+  }
+
+  .small-screen-li {
+    display: block;
+  }
+}
+
+/**********MediaQuery For Big Mobile*************/
+/* Surface Duo */
+@media (min-width: 481px) and (max-width: 819px) {
+  .small-screen-li {
+    display: block;
+  }
+}
+
+/* Medium (M) - Tablets & Small Laptops */
+/* I pad Air */
+@media (min-width: 820px) and (max-width: 1279px) {
+  .small-screen-li {
+    display: block;
+  }
+}
+
+/* Large (L) - Desktops & Large Screens */
+/* Nest Hub */
+@media (min-width: 1280px) {
+  .big-screen-li {
+    display: block;
+  }
+}

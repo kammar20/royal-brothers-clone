@@ -1,0 +1,194 @@
+/******** Utilitys ********/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Mulish', serif;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+:root {
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --yellowColor: #fed250;
+  --darkGray: #303030;
+  --lightGray: #dddddd;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--blackColor);
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.white-text {
+  color: var(--whiteColor);
+}
+
+.yellow-text {
+  color: var(--yellowColor);
+}
+
+.container {
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 90px;
+  height: 2px;
+  background: var(--yellowColor);
+  position: absolute;
+  bottom: -10px; /* Moves it below the text */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the underline */
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--whiteColor);
+  margin-bottom: 2rem;
+}
+
+h4::after {
+  content: '';
+  display: block;
+  height: 0.2rem;
+  background-color: #fed250;
+  width: 3.5rem;
+  margin-top: 0.5rem;
+}
+
+.common-section {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.tag {
+  background-color: #555555;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Support Chat */
+.support-container {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  cursor: pointer;
+  z-index: 2001;
+}
+
+.assistance-box {
+  position: absolute;
+  bottom: 8rem;
+  right: -1.5rem;
+  width: 35rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Triangle at the bottom */
+.assistance-box::after {
+  content: '';
+  position: absolute;
+  bottom: -1.5rem;
+  right: 3rem;
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid var(--whiteColor);
+}
+
+.assistance-box img {
+  width: 8rem;
+}
+.assistance-box p {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.support-container:hover .assistance-box {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  .support-container {
+    bottom: 3rem;
+    right: 3rem;
+  }
+
+  .assistance-box {
+    width: 28rem;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .assistance-box img {
+    width: 6rem;
+  }
+  .assistance-box p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
+
+/**********MediaQuery For Big Mobile*************/
+/* Surface Duo */
+@media (min-width: 481px) and (max-width: 819px) {
+  .support-container {
+    bottom: 4rem;
+    right: 4rem;
+  }
+
+  .assistance-box {
+    width: 30rem;
+    padding: 2.4rem;
+    gap: 2.5rem;
+  }
+
+  .assistance-box img {
+    width: 6rem;
+  }
+  .assistance-box p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
