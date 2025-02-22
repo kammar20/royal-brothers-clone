@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (cityName.includes(searchValue)) {
         container.style.display = 'block'; //
         container.style.height = 'auto';
+
         //Show matching cities
       } else {
         container.style.display = 'none'; // Hide non-matching cities

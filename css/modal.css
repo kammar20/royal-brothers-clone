@@ -130,7 +130,7 @@ body.no-scroll {
 /* modal contant container */
 .modal-content-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
   gap: 4rem;
   height: 75%;
@@ -159,7 +159,7 @@ body.no-scroll {
 
 .modal-img-container .modal-city-name {
   position: absolute;
-  bottom: 1rem;
+  top: 11rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
