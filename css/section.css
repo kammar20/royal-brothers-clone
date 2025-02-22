@@ -179,7 +179,14 @@ form .input-group {
   height: 50%;
 }
 
-/************************************************/
+/***************************************************/
+/********** Media Query for Small Device**********/
+@media screen and (max-width: 480px) {
+  .impact-section h2 {
+    font-size: 3rem;
+  }
+}
+/***************************************************/
 /********** Media Query Till Ipad and Tablet**********/
 @media screen and (max-width: 1024px) {
   /* service */

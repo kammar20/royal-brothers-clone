@@ -124,6 +124,7 @@
 
 /**************************************************/
 /********** Media Query For Small Device **********/
+
 @media (max-width: 480px) {
   .carousel-container {
     max-width: 320px;
@@ -162,6 +163,10 @@
   .quote-mark img {
     width: 3rem;
   }
+  .testimonial-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
 }
 
 /************************************************/
@@ -181,6 +186,11 @@
   /* Middle item effect */
   .middle .card-wrapper {
     transform: translateY(-1px);
+  }
+  .testimonial-section h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0rem;
   }
 
   .testimonial-text {
@@ -223,6 +233,10 @@
   /* Middle item effect */
   .middle .card-wrapper {
     transform: translateY(-1px);
+  }
+
+  .testimonial-section h2 {
+    font-size: 4rem;
   }
 
   .testimonial-text {
