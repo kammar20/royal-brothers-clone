@@ -20,8 +20,7 @@ function closeMenu() {
 closeSidebar.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
 
-// Accordion
-
+// Accordion in sidebar
 const accHeader = document.querySelectorAll('.accordion-header');
 
 const accBody = document.querySelector('.accordion-body');

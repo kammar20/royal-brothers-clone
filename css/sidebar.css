@@ -1,4 +1,5 @@
-/* Sidebar */
+/**************************************/
+/********** Sidebar Section **********/
 .sidebar {
   position: fixed;
   top: 0;
@@ -115,7 +116,6 @@
 }
 
 /* Sidebar Accordion */
-/* Accordion Styles */
 .accordion {
   overflow: hidden;
 }
@@ -189,8 +189,8 @@ body.no-scroll {
   overflow: hidden;
 }
 
-/**********MediaQuery For small Mobile*************/
-/* Nokia N9 */
+/**************************************************/
+/********** Media Query For Small Device **********/
 @media screen and (max-width: 480px) {
   .sidebar-btn-group {
     display: flex;
@@ -201,24 +201,24 @@ body.no-scroll {
   }
 }
 
-/**********MediaQuery For Big Mobile*************/
-/* Surface Duo */
+/************************************************/
+/********** Media Query For Big Mobile **********/
 @media (min-width: 481px) and (max-width: 819px) {
   .small-screen-li {
     display: block;
   }
 }
 
-/* Medium (M) - Tablets & Small Laptops */
-/* I pad Air */
+/******************************************************/
+/********** Media Query For Ipad and Tablets **********/
 @media (min-width: 820px) and (max-width: 1279px) {
   .small-screen-li {
     display: block;
   }
 }
 
-/* Large (L) - Desktops & Large Screens */
-/* Nest Hub */
+/*************************************************/
+/********** Media Query For Big Screen  **********/
 @media (min-width: 1280px) {
   .big-screen-li {
     display: block;

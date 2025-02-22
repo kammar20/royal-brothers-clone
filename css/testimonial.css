@@ -1,3 +1,5 @@
+/*****************************************/
+/********** Testimonial Section **********/
 .testimonial-section {
   width: 100%;
   text-align: center;
@@ -7,6 +9,13 @@
   gap: 5rem;
 }
 
+.testimonial-section h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+/* Carousel */
 .carousel-container {
   max-width: 1500px;
   overflow: hidden;
@@ -113,9 +122,8 @@
   font-size: 14px;
 }
 
-/* media */
-/* Responsive adjustments */
-
+/**************************************************/
+/********** Media Query For Small Device **********/
 @media (max-width: 480px) {
   .carousel-container {
     max-width: 320px;
@@ -156,7 +164,8 @@
   }
 }
 
-/* big screen mobile */
+/************************************************/
+/********** Media Query For Big Mobile **********/
 @media (min-width: 481px) and (max-width: 819px) {
   .carousel-container {
     max-width: 320px;
@@ -197,6 +206,8 @@
   }
 }
 
+/******************************************************/
+/********** Media Query For Ipad and Tablets **********/
 @media (min-width: 820px) and (max-width: 1279px) {
   .carousel-container {
     max-width: 650px;
@@ -237,6 +248,8 @@
   }
 }
 
+/***************************************************/
+/********** Media Query For Small Laptop **********/
 @media (min-width: 1280px) and (max-width: 1499px) {
   .carousel-container {
     max-width: 1200px;

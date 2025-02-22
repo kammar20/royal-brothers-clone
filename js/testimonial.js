@@ -3,26 +3,24 @@ const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
 let items = document.querySelectorAll('.carousel-item');
-const visibleItems = 3; // Change this if you want to display a different number of items
-let index = 1; // Start at the first real item
+const visibleItems = 3;
+let index = 1;
 
-// Clone first and last items for seamless infinite scroll
 const firstClone = items[0].cloneNode(true);
 const lastClone = items[items.length - 1].cloneNode(true);
 
 carouselInner.appendChild(firstClone);
 carouselInner.insertBefore(lastClone, items[0]);
 
-// Update items list after cloning
 items = document.querySelectorAll('.carousel-item');
 const totalItems = items.length;
 
 // Function to calculate dynamic slide width
 function getSlideWidth() {
-  return items[0].offsetWidth + 20; // Adjust margin if needed
+  return items[0].offsetWidth + 20;
 }
 
-// Set initial position
+// initial position
 carouselInner.style.transform = `translateX(${-index * getSlideWidth()}px)`;
 
 function updateCarousel(smooth = true) {
@@ -31,10 +29,9 @@ function updateCarousel(smooth = true) {
     ? 'transform 0.5s ease-in-out'
     : 'none';
   carouselInner.style.transform = `translateX(${-index * slideWidth}px)`;
-  updateMiddleItem(); // Highlight next slide
+  updateMiddleItem();
 }
 
-// Function to highlight the NEXT active slide (like 123 → 234 effect)
 function updateMiddleItem() {
   items.forEach((item) => item.classList.remove('middle'));
 
@@ -42,7 +39,6 @@ function updateMiddleItem() {
   items[middleIndex]?.classList.add('middle');
 }
 
-// Move Next (One Slide at a Time)
 nextButton.addEventListener('click', () => {
   index++;
   updateCarousel();
@@ -55,7 +51,6 @@ nextButton.addEventListener('click', () => {
   }
 });
 
-// Move Previous (One Slide at a Time)
 prevButton.addEventListener('click', () => {
   index--;
   updateCarousel();
@@ -71,5 +66,4 @@ prevButton.addEventListener('click', () => {
 // Initial Position
 updateCarousel(false);
 
-// Adjust on window resize
 window.addEventListener('resize', () => updateCarousel(false));

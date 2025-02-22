@@ -1,4 +1,5 @@
-/* header */
+/*****************************/
+/********** Header **********/
 .header {
   width: 100%;
   position: sticky;
@@ -8,7 +9,7 @@
   background-color: var(--whiteColor);
 }
 
-/* topbar */
+/* Topbar */
 .topbar {
   display: flex;
   justify-content: flex-end;
@@ -51,19 +52,18 @@
   align-items: center;
 }
 
-.hamburger-menu {
-  font-size: 2.2rem;
+.hamburger-menu img {
+  cursor: pointer;
+  width: 2rem;
   margin-right: 1.5rem;
 }
 
 .logo .pc-logo {
   width: 15rem;
-  display: none;
 }
 
 .logo .mobile-logo {
   width: 3rem;
-  display: none;
 }
 
 /* nav menu */
@@ -77,6 +77,13 @@
   font-size: 1.5rem;
   padding: 2.1rem;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-item .nav-link img {
+  width: 1.2rem;
 }
 
 .nav-item .nav-img {
@@ -102,13 +109,13 @@
   position: relative;
 }
 
-/* drop diown */
+/* dropdown */
 .dropdown-content {
   opacity: 0;
   visibility: hidden;
   width: 100%;
   position: absolute;
-  top: 40px;
+  top: 6.2rem;
   left: 0;
   background-color: var(--whiteColor);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -168,6 +175,10 @@
   background-color: var(--yellowColor);
 }
 
+.btn-location .down-icon {
+  width: 1.2rem;
+}
+
 .line-seperator-btn {
   height: 1.2rem;
   width: 2px; /* Line thickness */
@@ -198,8 +209,8 @@
   letter-spacing: 0.1rem;
 }
 
-/**********MediaQuery For small Mobile*************/
-/* Nokia N9 */
+/**************************************************/
+/********** Media Query For Small Device **********/
 @media screen and (max-width: 480px) {
   .topbar {
     padding: 0.4rem 0.8rem;
@@ -209,8 +220,8 @@
     padding: 1rem 1.5rem;
   }
 
-  .logo .mobile-logo {
-    display: block;
+  .logo .pc-logo {
+    display: none;
   }
 
   .nav-menu {
@@ -226,16 +237,16 @@
   }
 }
 
-/**********MediaQuery For Big Mobile*************/
-/* Surface Duo */
+/************************************************/
+/********** Media Query For Big Mobile **********/
 @media (min-width: 481px) and (max-width: 819px) {
   /* navbar */
   .navbar {
     padding: 1rem 2rem;
   }
 
-  .logo .mobile-logo {
-    display: block;
+  .logo .pc-logo {
+    display: none;
   }
 
   .nav-menu {
@@ -243,12 +254,12 @@
   }
 }
 
-/* Medium (M) - Tablets & Small Laptops */
-/* I pad Air */
+/******************************************************/
+/********** Media Query For Ipad and Tablets **********/
 @media (min-width: 820px) and (max-width: 1279px) {
   /* navbar */
-  .logo .pc-logo {
-    display: block;
+  .logo .mobile-logo {
+    display: none;
   }
 
   .nav-menu {
@@ -256,8 +267,8 @@
   }
 }
 
-/* Large (L) - Desktops & Large Screens */
-/* Nest Hub */
+/*************************************************/
+/********** Media Query For Big Screen  **********/
 @media (min-width: 1280px) {
   /* navbar */
   .logo .mobile-logo {

@@ -21,6 +21,12 @@ body {
   --lightGray: #dddddd;
 }
 
+.container {
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+/* Common Styles */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -41,11 +47,6 @@ button {
 
 .yellow-text {
   color: var(--yellowColor);
-}
-
-.container {
-  max-width: 2200px;
-  margin: 0 auto;
 }
 
 h2 {
@@ -94,7 +95,14 @@ h4::after {
   border-radius: 0.5rem;
 }
 
-/* Support Chat */
+.new-text {
+  color: red;
+  font-size: 1rem;
+  vertical-align: text-top;
+}
+
+/*****************************************/
+/********** Support Section ****************/
 .support-container {
   position: fixed;
   bottom: 5rem;
@@ -143,13 +151,17 @@ h4::after {
 }
 
 .support-container:hover .assistance-box {
-  /* display: block; */
   visibility: visible;
   opacity: 1;
 }
 
-/* media query */
+/**************************************************/
+/********** Media Query For Small Device **********/
 @media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2.3rem;
+  }
+
   .support-container {
     bottom: 3rem;
     right: 3rem;
@@ -170,9 +182,13 @@ h4::after {
   }
 }
 
-/**********MediaQuery For Big Mobile*************/
-/* Surface Duo */
+/************************************************/
+/********** Media Query For Big Mobile **********/
 @media (min-width: 481px) and (max-width: 819px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
   .support-container {
     bottom: 4rem;
     right: 4rem;

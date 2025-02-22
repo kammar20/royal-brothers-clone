@@ -1,4 +1,5 @@
-/*** hero section ***/
+/************************************/
+/********** Hero Section **********/
 .hero-section {
   width: 100%;
   position: relative;
@@ -9,7 +10,7 @@
   width: 100%;
 }
 
-/* <!-- Booking Card Hero Section Big Screen--> */
+/* Booking Card Hero Section Big Screen */
 .booking-card {
   width: 36rem;
   position: absolute;
@@ -80,9 +81,9 @@ form .input-group {
   padding: 1rem 0;
   border-radius: 0.5rem;
 }
-/* Booking eend here */
 
-/* service section */
+/**************************************/
+/********** Service Section **********/
 .service-img {
   width: 100%;
   display: flex;
@@ -101,7 +102,8 @@ form .input-group {
   /* height: auto; */
 }
 
-/* big save Section*/
+/***************************************/
+/********** Big Save Section **********/
 .big-save {
   width: 100%;
   display: flex;
@@ -113,11 +115,17 @@ form .input-group {
 .big-save picture,
 .big-save img {
   width: 100%;
-  height: auto; /* Maintains aspect ratio and allows height to adjust */
+  height: auto;
   display: block;
 }
 
-/* impact section */
+/*************************************/
+/********** Impact Section **********/
+.impact-section h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
 .impact-img {
   width: 100%;
   display: flex;
@@ -129,12 +137,12 @@ form .input-group {
 .impact-img picture,
 .impact-img img {
   width: 100%;
-  height: auto; /* Maintains aspect ratio and allows height to adjust */
+  height: auto;
   display: block;
 }
 
-/* featured Section */
-
+/***************************************/
+/********** Featured Section **********/
 .featured-section {
   padding: 6rem 0;
 }
@@ -171,15 +179,8 @@ form .input-group {
   height: 50%;
 }
 
-/**********MediaQuery For small Mobile*************/
-/* Nokia N9 */
-@media screen and (max-width: 1023px) {
-  /* Booking Card Hero Section Big Screen */
-  .booking-card {
-    display: none;
-  }
-}
-
+/************************************************/
+/********** Media Query Till Ipad and Tablet**********/
 @media screen and (max-width: 1024px) {
   /* service */
   .service-img {
@@ -190,13 +191,20 @@ form .input-group {
   }
 }
 
-/* Large (L) - Desktops & Large Screens */
-/* Nest Hub */
+/**************************************************/
+/********** Media Query For large Screen **********/
+@media screen and (max-width: 1279px) {
+  /* Booking Card Hero Section Big Screen */
+  .booking-card {
+    display: none;
+  }
+}
+
+/*************************************************/
+/********** Media Query For Desktop *************/
 @media (min-width: 1280px) {
   /* Booking Card for small Device */
   .booking-card-small {
     display: none;
   }
 }
-
-/* //////  work on booking card and differnt section  */

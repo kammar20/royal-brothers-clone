@@ -1,8 +1,11 @@
+/*****************************/
+/********** Footer **********/
 .footer {
   width: 100%;
 }
 
-/* top footer */
+/**************/
+/* Top footer */
 .top-footer {
   width: 100%;
   padding: 6rem 7rem 4rem;
@@ -67,7 +70,8 @@
   width: 14rem;
 }
 
-/* sub footer */
+/**************/
+/* Sub footer */
 .sub-footer {
   width: 100%;
   background-color: #444444;
@@ -129,6 +133,7 @@
   margin: 0 0.6rem;
 }
 
+/**************/
 /* footer copy */
 .footer-copy {
   width: 100%;
@@ -151,8 +156,8 @@
   margin: 0 0.3rem;
 }
 
-/**********MediaQuery For small Mobile*************/
-/* Nokia N9 */
+/**************************************************/
+/********** Media Query For Small Device **********/
 @media screen and (max-width: 480px) {
   /* footer top */
   .top-footer {
@@ -208,8 +213,8 @@
   }
 }
 
-/**********MediaQuery For Big Mobile*************/
-/* Surface Duo */
+/************************************************/
+/********** Media Query For Big Mobile **********/
 @media (min-width: 481px) and (max-width: 819px) {
   /* footer top */
   .top-footer {
@@ -234,10 +239,6 @@
     margin-bottom: 4rem;
   }
 
-  /* .top-footer .download-app ul li img {
-    width: 15rem;
-  } */
-
   /* sub footer */
   .sub-footer {
     padding: 3rem 2rem;
@@ -249,8 +250,8 @@
   }
 }
 
-/* Medium (M) - Tablets & Small Laptops */
-/* I pad Air */
+/******************************************************/
+/********** Media Query For Ipad and Tablets **********/
 @media (min-width: 820px) and (max-width: 1279px) {
   /* footer top */
   .contact,

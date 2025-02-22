@@ -7,7 +7,7 @@
     <title>Royal Brothers | Clone</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./images/apple-touch-icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./asset/icons-and-logos/favicon.png" type="image/x-icon" />
 
     <!-- Googel Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,28 +15,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet" />
 
-    <!-- font Awesome -->
-    <script src="https://kit.fontawesome.com/8c44950f49.js" crossorigin="anonymous"></script>
-
     <!-- Main StyleSheet -->
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
-    <link rel="stylesheet" href="./css/section.css" />
     <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/section.css" />
     <link rel="stylesheet" href="./css/testimonial.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 </head>
 
 <body>
-    <!-- Container -->
+    <!---------------------------------->
+    <!------Big Container Container----->
     <main class="container">
-        <!-- header -->
+        <!-------------->
+        <!---header----->
         <header class="header">
             <!-- topbar -->
             <div class="topbar">
                 <p class="phone-number">
-                    <img src="./images/topnav-call-svg.svg" alt="" />
+                    <img src="./asset/icons-and-logos/phone-icon-fill-gray.svg" alt="phone-image" />
                     <a href="#">+917795687594</a>
                     <span> / </span>
                     <a href="#">+919019595595</a>
@@ -52,20 +51,20 @@
             <nav class="navbar">
                 <!-- hamburger -->
                 <div class="hamburger-menu" id="openSidebar">
-                    <i class="fa-solid fa-bars"></i>
+                    <img src="./asset/icons-and-logos/hamburger-icon.svg" alt="menu-icon">
                 </div>
 
                 <!-- logo -->
                 <div class="logo">
-                    <img class="pc-logo" src="./images/logo-pc.svg" alt="" />
-                    <img class="mobile-logo" src="./images/logo-mobile.svg" alt="" />
+                    <img class="pc-logo" src="./asset/icons-and-logos/pc-logo.svg" alt="brand-logo" />
+                    <img class="mobile-logo" src="./asset/icons-and-logos/mobile-logo.svg" alt="brand-mobile-logo" />
                 </div>
 
                 <!-- nav menu -->
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a href="#" class="nav-img">
-                            <img src="./images//logo-sub.svg" alt="" class="logo-sub" />
+                            <img src="./asset/icons-and-logos/sub-logo.svg" alt="sub-logo" class="logo-sub" />
                         </a>
                     </li>
 
@@ -73,20 +72,21 @@
                         <a href="#" class="nav-link">Traiff</a>
                     </li>
 
+                    <!-- navbar dropdown -->
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-btn">
-                            What's new? <i class="fa-solid fa-chevron-down"></i></a>
+                            What's new? <img src="./asset/icons-and-logos/down-icon.svg" alt="down-icon"></a>
                         <div class="dropdown-content">
-                            <a href="#">Short by RB</a>
-                            <a href="#">Advanture by RB</a>
+                            <a href="#">Short by RB <span class="new-text">New</span></a>
+                            <a href="#">Advanture by <br> RB <span class="new-text">New</span></a>
                             <a href="#">Inter-city Travel</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">Offers</a></li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-btn nav-link">Partner with us <i
-                                class="fa-solid fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-btn nav-link">Partner with us <img
+                                src="./asset/icons-and-logos/down-icon.svg" alt="down-icon"></a>
                         <div class="dropdown-content">
                             <a href="#">Earn with us</a>
                             <a href="#">Own a Franchise</a>
@@ -97,8 +97,8 @@
                 <!-- location and login -->
                 <div class="nav-buttons">
                     <button class="btn-location">
-                        <img src="./images/location-drop-svg.svg" alt="" />
-                        Bangalore<i class="fa-solid fa-chevron-down"></i>
+                        <img src="./asset/icons-and-logos/location-icon.svg" alt="location-icon" />
+                        Bangalore<img src="./asset/icons-and-logos/down-icon.svg" alt="down-icon" class="down-icon">
                     </button>
 
                     <p class="line-seperator-btn"></p>
@@ -110,13 +110,16 @@
             </nav>
         </header>
 
-        <!-- Sidebar -->
+
+        <!-- Sidebar Overlay -->
         <div class="overlay" id="overlay"></div>
+        <!-------------->
+        <!---Sidebar---->
         <aside class="sidebar" id="sidebar">
             <ul>
                 <div class="cross-btn">
                     <button class="close-btn" id="closeSidebar">
-                        <img src="./images/icons_and_logos/cross-icon.svg" alt="" />
+                        <img src="./asset/icons-and-logos/cross-icon.svg" alt="cross-icon" />
                     </button>
                 </div>
 
@@ -127,8 +130,8 @@
                     <button class="sidebar-signup">Sign Up</button>
                 </li>
                 <li><a href="#">Tariff</a></li>
-                <li><a href="#">Store by RB</a></li>
-                <li><a href="#">Adventure by RB</a></li>
+                <li><a href="#">Store by RB <span class="new-text">New</span></a></li>
+                <li><a href="#">Adventure by RB <span class="new-text">New</span></a></li>
                 <li><a href="#">RoyalBrothersX</a></li>
                 <li><a href="#">Partner with us</a></li>
                 <li><a href="#">Blog</a></li>
@@ -141,7 +144,7 @@
                     <div class="accordion">
                         <li class="accordion-header">
                             Menu
-                            <img src="./images/icons_and_logos/down-icon.svg" alt="" />
+                            <img src="./asset/icons-and-logos/down-icon.svg" alt="down-icon" />
                         </li>
                         <ul class="accordion-body" id="menuAccordion">
                             <li><a href="#">Terms and Conditions</a></li>
@@ -154,7 +157,7 @@
                     <div class="accordion">
                         <li class="accordion-header">
                             Partner with Us
-                            <img src="./images/icons_and_logos/down-icon.svg" alt="" />
+                            <img src="./asset/icons-and-logos/down-icon.svg" alt="down-icon" />
                         </li>
                         <ul class="accordion-body" id="menuAccordion">
                             <li><a href="#">Own a Franchise</a></li>
@@ -174,26 +177,28 @@
             </ul>
         </aside>
 
-        <!-- Modal -->
+        <!-- Modal Overlay -->
         <div class="modal-overlay"></div>
+        <!-------------->
+        <!----Modal----->
         <div class="modal-container">
             <!-- modal header -->
             <div class="modal-header">
                 <div class="branding">
-                    <img src="./images/icons_and_logos/modal-brand-logo.png" alt="" />
+                    <img src="./asset/icons-and-logos/modal-brand-logo.png" alt="brand-logo=modal" />
                     <p class="line-seperator-modal"></p>
                     <p class="branding-title">Bike Rentals</p>
                 </div>
                 <div class="modal-btn-container">
                     <button class="modal-close-btn">
-                        <img src="./images/icons_and_logos/cross-icon.svg" alt="" />
+                        <img src="./asset/icons-and-logos/cross-icon.svg" alt="cross-icon" />
                     </button>
                 </div>
             </div>
 
             <!-- modal search -->
             <div class="modal-search-container">
-                <img src="./images/icons_and_logos/search-icon.svg" alt="" class="modal-search-icon" />
+                <img src="./asset/icons-and-logos/search-icon.svg" alt="search-icon" class="modal-search-icon" />
                 <input type="text" class="modal-search-bar" placeholder="Search or type city to select" />
                 <button class="modal-clear-btn">Clear</button>
             </div>
@@ -201,161 +206,161 @@
             <!-- modal content -->
             <div class="modal-content-container">
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Agra.png" alt="" />
+                    <img src="./asset/city-images/Agra.png" alt="Agra" />
                     <span class="modal-city-name">Agra</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Ahmedabad.png" alt="" />
+                    <img src="./asset/city-images/Ahmedabad.png" alt="Ahmedabad" />
                     <span class="modal-city-name">Ahmedabad</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Bangalore.png" alt="" />
+                    <img src="./asset/city-images/Bangalore.png" alt="Bangalore" />
                     <span class="modal-city-name">Bangalore</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Bangalore_Airport.png" alt="" />
+                    <img src="./asset/city-images/Bangalore-Airport.png" alt="Bangalore Airport" />
                     <span class="modal-city-name">Bangalore Airport</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Belagavi.png" alt="" />
+                    <img src="./asset/city-images/Belagavi.png" alt="Belagavi" />
                     <span class="modal-city-name">Belagavi</span>
                 </div>
 
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Bhubaneswar.png" alt="" />
+                    <img src="./asset/city-images/Bhubaneswar.png" alt="Bhubaneswar" />
                     <span class="modal-city-name">Bhubaneswar</span>
                 </div>
 
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Calicut.png" alt="" />
+                    <img src="./asset/city-images/Calicut.png" alt="Calicut" />
                     <span class="modal-city-name">Calicut</span>
                 </div>
 
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Chandigarh.png" alt="" />
+                    <img src="./asset/city-images/Chandigarh.png" alt="Chandigarh" />
                     <span class="modal-city-name">Chandigarh</span>
                 </div>
 
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Chikmangluru.png" alt="" />
+                    <img src="./asset/city-images/Chikmangluru.png" alt="Chikmangluru" />
                     <span class="modal-city-name">Chikmangluru</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Cochin.png" alt="" />
+                    <img src="./asset/city-images/Cochin.png" alt="Cochin" />
                     <span class="modal-city-name">Cochin</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Coorg_Madikeri.png" alt="" />
+                    <img src="./asset/city-images/Coorg-Madikeri.png" alt="Coorg" />
                     <span class="modal-city-name">Coorg</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Delhi.png" alt="" />
+                    <img src="./asset/city-images/Delhi.png" alt="Delhi" />
                     <span class="modal-city-name">Delhi</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Gandhi_Nagar.png" alt="" />
+                    <img src="./asset/city-images/Gandhi-Nagar.png" alt="Gandhinagar" />
                     <span class="modal-city-name">Gandhinagar</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Guntur.png" alt="" />
+                    <img src="./asset/city-images/Guntur.png" alt="Guntur" />
                     <span class="modal-city-name">Guntur</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Gurugram.jpg" alt="" />
+                    <img src="./asset/city-images/Gurugram.jpg" alt="Gurugram" />
                     <span class="modal-city-name">Gurugram</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Guwahati.png" alt="" />
+                    <img src="./asset/city-images/Guwahati.png" alt="Guwahati" />
                     <span class="modal-city-name">Guwahati</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Hampi.png" alt="" />
+                    <img src="./asset/city-images/Hampi.png" alt="Hampi" />
                     <span class="modal-city-name">Hampi</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Hubli.png" alt="" />
+                    <img src="./asset/city-images/Hubli.png" alt="Hubli Dharwad" />
                     <span class="modal-city-name">Hubli-Dharwad</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Hyderabad.png" alt="" />
+                    <img src="./asset/city-images/Hyderabad.png" alt="Hyderabad" />
                     <span class="modal-city-name">Hyderabad</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Jaipur.png" alt="" />
+                    <img src="./asset/city-images/Jaipur.png" alt="Jaipur" />
                     <span class="modal-city-name">Jaipur</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Jaisalmer.png" alt="" />
+                    <img src="./asset/city-images/Jaisalmer.png" alt="Jaisalmer" />
                     <span class="modal-city-name">Jaisalmer</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Jodhpur.png" alt="" />
+                    <img src="./asset/city-images/Jodhpur.png" alt="Jodhpur" />
                     <span class="modal-city-name">Jodhpur</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Kolkata.png" alt="" />
+                    <img src="./asset/city-images/Kolkata.png" alt="Kolkata" />
                     <span class="modal-city-name">Kolkata</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Leh_Ladakh.png" alt="" />
+                    <img src="./asset/city-images/Leh-Ladakh.png" alt="Leh Ladakh" />
                     <span class="modal-city-name">Leh Ladakh</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Manali.png" alt="" />
+                    <img src="./asset/city-images/Manali.png" alt="Manali" />
                     <span class="modal-city-name">Manali</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Mangalore.png" alt="" />
+                    <img src="./asset/city-images/Mangalore.png" alt="Mangalore" />
                     <span class="modal-city-name">Mangalore</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Mysore.png" alt="" />
+                    <img src="./asset/city-images/Mysore.png" alt="Mysore" />
                     <span class="modal-city-name">Mysore</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Pondicherry.png" alt="" />
+                    <img src="./asset/city-images/Pondicherry.png" alt="Pondicherry" />
                     <span class="modal-city-name">Pondicherry</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Puri.png" alt="" />
+                    <img src="./asset/city-images/Puri.png" alt="Puri" />
                     <span class="modal-city-name">Puri</span>
                 </div>
 
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Ranchi.png" alt="" />
+                    <img src="./asset/city-images/Ranchi.png" alt="Ranchi" />
                     <span class="modal-city-name">Ranchi</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Surat.png" alt="" />
+                    <img src="./asset/city-images/Surat.png" alt="Surat" />
                     <span class="modal-city-name">Surat</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Tirupati.png" alt="" />
+                    <img src="./asset/city-images/Tirupati.png" alt="Tirupati" />
                     <span class="modal-city-name">Tirupati</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Trivandrum.png" alt="" />
+                    <img src="./asset/city-images/Trivandrum.png" alt="Trivandrum" />
                     <span class="modal-city-name">Trivandrum</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Udaipur.png" alt="" />
+                    <img src="./asset/city-images/Udaipur.png" alt="Udaipur" />
                     <span class="modal-city-name">Udaipur</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Udupi.png" alt="" />
+                    <img src="./asset/city-images/Udupi.png" alt="Udupi Manipal" />
                     <span class="modal-city-name">Udupi-Manipal</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Vijayawada.png" alt="" />
+                    <img src="./asset/city-images/Vijayawada.png" alt="Vijayawada" />
                     <span class="modal-city-name">Vijayawada</span>
                 </div>
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Vizag.png" alt="" />
+                    <img src="./asset/city-images/Vizag.png" alt="Vizag" />
                     <span class="modal-city-name">Vizag</span>
                 </div>
 
                 <div class="modal-img-container">
-                    <img src="./images/city_images/Wayanad.png" alt="" />
+                    <img src="./asset/city-images/Wayanad.png" alt="Wayanad" />
                     <span class="modal-city-name">Wayanad</span>
                 </div>
 
@@ -370,27 +375,29 @@
             </div>
         </div>
 
-        <!-- Hero Section -->
+
+        <!---------------->
+        <!--Hero Section-->
         <section class="hero-section">
             <picture>
-                <source srcset="./images/hero_desktop.webp" media="(min-width: 1024px)" />
-                <source srcset="./images/hero_tablet.webp" media="(min-width: 768px)" />
-                <img src="./images/hero_mobile.webp" alt="Hero Image" />
+                <source srcset="./asset/images/hero_desktop.webp" media="(min-width: 1024px)" />
+                <source srcset="./asset/images/hero_tablet.webp" media="(min-width: 768px)" />
+                <img src="./asset/images/hero_mobile.webp" alt="Hero Image" />
             </picture>
 
-            <!-- Booking Card Hero Section -->
+            <!-- Booking Card for Hero Section -->
             <div class="booking-card">
                 <h3>Search your next ride</h3>
                 <form>
                     <h5>Pickup</h5>
                     <div class="input-group">
                         <input class="first-input" type="date" placeholder="Date" />
-                        <input class="second-input" type="time" />
+                        <input class="second-input" type="time" placeholder="Date" />
                     </div>
                     <h5>Dropoff</h5>
                     <div class="input-group">
-                        <input class="first-input" type="date" />
-                        <input class="second-input" type="time" />
+                        <input class="first-input" type="date" placeholder="Date" />
+                        <input class="second-input" type="time" placeholder="Date" />
                     </div>
                     <div class="btn-container">
                         <button class="btn">Search</button>
@@ -399,6 +406,7 @@
             </div>
         </section>
 
+        <!----------------------------------->
         <!-- Booking Card for small device -->
         <section class="booking-card-small common-section">
             <h3>Search your next ride</h3>
@@ -419,47 +427,50 @@
             </form>
         </section>
 
+        <!--------------------->
         <!-- Service Section -->
         <section class="service-section common-section">
             <h2>Services we Offer</h2>
-            <!-- Service Section -->
-
             <div class="service-img">
                 <picture>
-                    <source srcset="./images/our_services_right.webp" media="(min-width: 1025px)" />
-                    <source srcset="./images/our_services_top_tablet.webp" media="(min-width: 768px)" />
-                    <img src="./images/our_services_top_mobile.webp" alt="Service Image 1" />
+                    <source srcset="./asset/images/our_services_right.webp" media="(min-width: 1025px)" />
+                    <source srcset="./asset/images/our_services_top_tablet.webp" media="(min-width: 768px)" />
+                    <img src="./asset/images/our_services_top_mobile.webp" alt="Service Image" />
                 </picture>
 
                 <picture>
-                    <source srcset="./images/our_services_left.webp" media="(min-width: 1025px)" />
-                    <source srcset="./images/our_services_bottom_tablet.webp" media="(min-width: 768px)" />
-                    <img src="./images/our_services_bottom_mobile.webp" alt="Service Image 2" />
+                    <source srcset="./asset/images/our_services_left.webp" media="(min-width: 1025px)" />
+                    <source srcset="./asset/images/our_services_bottom_tablet.webp" media="(min-width: 768px)" />
+                    <img src="./asset/images/our_services_bottom_mobile.webp" alt="Service Image 2" />
                 </picture>
             </div>
         </section>
 
+
+        <!--------------------->
         <!-- Big Save Section -->
         <section class="big-save common-section">
             <picture>
-                <source srcset="./images/BigSaveDesktop.webp" media="(min-width: 1024px)" />
-                <source srcset="./images/BigSaveTablet.webp" media="(min-width: 768px)" />
-                <img src="./images/BigSaveMobile.webp" alt="Hero Image" />
+                <source srcset="./asset/images/BigSaveDesktop.webp" media="(min-width: 1024px)" />
+                <source srcset="./asset/images/BigSaveTablet.webp" media="(min-width: 768px)" />
+                <img src="./asset/images/BigSaveMobile.webp" alt="BigSave Image" />
             </picture>
         </section>
 
+        <!-------------------->
         <!-- impact section -->
         <section class="impact-section common-section">
             <h2>Our impact in <span class="yellow-text"> numbers </span></h2>
             <div class="impact-img">
                 <picture>
-                    <source srcset="./images/Stats_Desktop.webp" media="(min-width: 1024px)" />
-                    <source srcset="./images/Stats_tablet.webp" media="(min-width: 768px)" />
-                    <img src="./images/Stats_Mobile.webp" alt="Hero Image" />
+                    <source srcset="./asset/images/Stats_Desktop.webp" media="(min-width: 1024px)" />
+                    <source srcset="./asset/images/Stats_tablet.webp" media="(min-width: 768px)" />
+                    <img src="./asset/images/Stats_Mobile.webp" alt="Impact Image" />
                 </picture>
             </div>
         </section>
 
+        <!------------------------->
         <!-- Testimonial Section -->
         <section class="testimonial-section common-section">
             <h2>
@@ -473,7 +484,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -492,7 +503,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -511,7 +522,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -529,7 +540,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -547,7 +558,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -589,7 +600,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -606,7 +617,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -624,7 +635,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -647,7 +658,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -670,7 +681,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -688,7 +699,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -707,7 +718,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -724,7 +735,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -743,7 +754,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -765,7 +776,7 @@
                         <div class="carousel-item">
                             <div class="card-wrapper">
                                 <div class="quote-mark">
-                                    <img src="./images/icons_and_logos/quotes-icon.svg" alt="" />
+                                    <img src="./asset/icons-and-logos/quotes-icon.svg" alt="Quotes Logo" />
                                 </div>
                                 <div class="card">
                                     <p class="testimonial-text">
@@ -785,71 +796,73 @@
                 </div>
                 <div class="corosul-btn-container">
                     <button class="prev">
-                        <img src="./images/icons_and_logos/left-icon.svg" alt="">
+                        <img src="./asset/icons-and-logos/left-icon.svg" alt="left icon">
                     </button>
                     <button class="next">
-                        <img src="./images/icons_and_logos/right-icon.svg" alt="">
+                        <img src="./asset/icons-and-logos/right-icon.svg" alt="right icon">
                     </button>
                 </div>
             </div>
         </section>
 
+        <!----------------------->
         <!-- Featured Section -->
         <section class="featured-section">
             <h2>Featured In</h2>
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide">
-                        <img src="./images/fetured1.webp" height="100" width="250" alt="1" />
+                        <img src="./asset/images/fetured1.webp" height="100" width="250" alt="fetured1" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured2.webp" height="100" width="250" alt="2" />
+                        <img src="./asset/images/fetured2.webp" height="100" width="250" alt="fetured2" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured3.webp" height="100" width="250" alt="3" />
+                        <img src="./asset/images/fetured3.webp" height="100" width="250" alt="fetured3" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured4.webp" height="100" width="250" alt="4" />
+                        <img src="./asset/images/fetured4.webp" height="100" width="250" alt="fetured4" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured5.webp" height=" 100" width="250" alt="5" />
+                        <img src="./asset/images/fetured5.webp" height=" 100" width="250" alt="fetured5" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured6.webp" height="100" width="250" alt="6" />
+                        <img src="./asset/images/fetured6.webp" height="100" width="250" alt="fetured6" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured7.webp" height="100" width="250" alt="7" />
+                        <img src="./asset/images/fetured7.webp" height="100" width="250" alt="fetured7" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured1.webp" height="100" width="250" alt="1" />
+                        <img src="./asset/images/fetured1.webp" height="100" width="250" alt="fetured1" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured2.webp" height="100" width="250" alt="2" />
+                        <img src="./asset/images/fetured2.webp" height="100" width="250" alt="fetured2" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured3.webp" height="100" width="250" alt="3" />
+                        <img src="./asset/images/fetured3.webp" height="100" width="250" alt="fetured3" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured4.webp" height="100" width="250" alt="4" />
+                        <img src="./asset/images/fetured4.webp" height="100" width="250" alt="fetured4" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured5.webp" height=" 100" width="250" alt="5" />
+                        <img src="./asset/images/fetured5.webp" height=" 100" width="250" alt="fetured5" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured6.webp" height="100" width="250" alt="6" />
+                        <img src="./asset/images/fetured6.webp" height="100" width="250" alt="fetured6" />
                     </div>
                     <div class="slide">
-                        <img src="./images/fetured7.webp" height="100" width="250" alt="7" />
+                        <img src="./asset/images/fetured7.webp" height="100" width="250" alt="fetured7" />
                     </div>
                 </div>
             </div>
         </section>
 
+        <!------------------>
         <!-- Support Chat -->
         <div class="support-container">
-            <img src="./images/icons_and_logos/chat-icon.svg" alt="" />
+            <img src="./asset/icons-and-logos/chat-icon.svg" alt="Chat Icon" />
             <div class="assistance-box">
-                <img src="./images/images/support-person-img.webp" alt="" />
+                <img src="./asset/images/support-person-img.webp" alt="Person Image" />
                 <p>
                     Need Assistance? <br />
                     Chat with Us!
@@ -857,6 +870,8 @@
             </div>
         </div>
 
+
+        <!------------>
         <!-- Footer -->
         <footer class="footer">
             <!-- Top Footer -->
@@ -867,11 +882,12 @@
                     <h4 class="footer-common-h3">Royal Brothers</h4>
                     <ul>
                         <li>
-                            <img class="mail-icon" src="./images/icons_and_logos/mail-icon.svg" alt="" />
+                            <img class="mail-icon" src="./asset/icons-and-logos/mail-icon.svg" alt="Mail Icon" />
                             <a href="#">support@royalbrothers.com</a>
                         </li>
                         <li>
-                            <img class="footer-call-icon" src="./images//icons_and_logos/phone-icon.svg" alt="" />
+                            <img class="footer-call-icon" src="./asset/icons-and-logos/phone-icon.svg"
+                                alt="Phone Icon" />
                             <a href="#">+917795687594 / +919019595595</a>
                         </li>
                     </ul>
@@ -934,27 +950,20 @@
                     <h4 class="footer-common-h3">Follow Us</h4>
                     <ul>
                         <li>
-                            <img src="./images/icons_and_logos/insta-icon.svg" alt="" />
+                            <img src="./asset/icons-and-logos/insta-icon.svg" alt="Insta Icon" />
                         </li>
                         <li>
-                            <img src="./images/icons_and_logos/facebook-icon.svg" alt="" />
+                            <img src="./asset/icons-and-logos/facebook-icon.svg" alt="Facebook Icon" />
                         </li>
                         <li>
-                            <img src="./images/icons_and_logos/twitter-icon.svg" alt="" />
+                            <img src="./asset/icons-and-logos/twitter-icon.svg" alt="Twitter Icon" />
                         </li>
                         <li>
-                            <img src="./images/icons_and_logos/linkedin-icon.svg" alt="" />
+                            <img src="./asset/icons-and-logos/linkedin-icon.svg" alt="linkedin Icon" />
                         </li>
                         <li>
-                            <img src="./images/icons_and_logos/youtube-icon.svg" alt="" />
+                            <img src="./asset/icons-and-logos/youtube-icon.svg" alt="Youtube Icon" />
                         </li>
-
-                        <!-- <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li><i class="fa-brands fa-linkedin-in"></i></li>
-
-                        <li><i class="fa-brands fa-youtube"></i></li> -->
                     </ul>
                 </div>
 
@@ -963,10 +972,10 @@
                     <h4 class="footer-common-h3">Download our app</h4>
                     <ul>
                         <li>
-                            <img src="./images/icons_and_logos/apple-store-icon.webp" alt="" />
+                            <img src="./asset/icons-and-logos/apple-store-icon.webp" alt="Apple Store Icon" />
                         </li>
                         <li>
-                            <img src="./images/icons_and_logos/play-store-icon.webp" alt="" />
+                            <img src="./asset/icons-and-logos/play-store-icon.webp" alt="Play store Icon" />
                         </li>
                     </ul>
                 </div>
@@ -1298,16 +1307,15 @@
             <!-- Footer Copy -->
             <div class="footer-copy">
                 <p>
-                    Made with <img src="./images//heart.webp" alt="" /> by Ammar Azam
+                    Made with <img src="./asset/icons-and-logos/heart-logo.webp" alt="heart logo" /> by Ammar Azam
                     Khan
                 </p>
             </div>
         </footer>
     </main>
 
-    <script src="./js/feature.js"></script>
-    <script src="./js/sidebar.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/sidebar.js"></script>
     <script src="./js/testimonial.js"></script>
     <script src="./js/slider.js"></script>
 </body>
